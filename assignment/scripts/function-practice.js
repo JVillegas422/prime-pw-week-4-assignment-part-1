@@ -112,8 +112,19 @@ console.log('Function Test, sum should be 15:', sumAll(addAllNum));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
-
+function mixedArray( array ) {
+  let positive = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      positive.push(array[i]);
+    }
+  }
+  return positive;
+}
+let testArray = [3, 4, -7, -1, 2, 5];
+console.log(mixedArray(testArray));
+let testArrayTwo = [-3, -4, -7, -1, -2, -5];
+console.log(mixedArray(testArrayTwo));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
