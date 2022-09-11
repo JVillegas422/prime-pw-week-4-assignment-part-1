@@ -29,25 +29,30 @@ console.log(addNumbers(2,3));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( firstNum, secondNum, thirdNum ){
+  return firstNum * secondNum * thirdNum;
 }
+// function will multiply all numbers to equal 30
+console.log(multiplyThree(2, 3, 5));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-
+// Test console log statements
+console.log(isPositive(3));
+console.log(isPositive(0));
+console.log(isPositive(-3));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
